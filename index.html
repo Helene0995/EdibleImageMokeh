@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edible Image Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">E</span>
+        <div>
+          <strong>Edible Image</strong>
+          <small>Sweet Prints</small>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="#products">Products</a>
+        <a href="#process">How It Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-secondary cart-button" href="cart.html">
+          Cart <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a class="button button-primary" href="#contact">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fast delivery • Custom designs • Premium taste</p>
+          <h1>Delicious edible images for cakes, cookies, and desserts.</h1>
+          <p class="hero-text">Create unforgettable celebrations with custom edible prints made from quality ingredients. Upload your favorite image, choose the size, and get bakery-ready artwork.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start Your Order</a>
+            <a class="button button-secondary" href="#products">See Designs</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="product-badge">Best seller</div>
+          <img src="img/Welcomeimg.png" alt="Edible image cake" />
+          <div class="card-info">
+            <h2>Custom cake toppers</h2>
+            <p>High-definition edible prints that transform any celebration cake into a statement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section section-products">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our products</p>
+          <h2>Edible images perfected for every dessert.</h2>
+          <p>Choose from sheets, circle toppers, or custom die-cut edible decals. Ideal for birthdays, weddings, corporate events, and special treats.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image-gallery" data-product-gallery>
+              <img class="product-card-image" src="img/sheet2.png" alt="Sheet cake edible image" />
+              <img class="product-card-image" src="img/sheet.png" alt="Sheet cake edible image variant 1" />
+              <img class="product-card-image" src="img/sheet-cake.png" alt="Sheet cake edible image variant 2" />
+            </div>
+            <h3>Cake Sheets</h3>
+            <p>8x8, 8x10, and full-sheet edible paper for fast application on cakes.</p>
+            <button class="button button-secondary add-cart" type="button" data-product-id="sheet-cake" data-product-name="Cake Sheets">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-gallery" data-product-gallery>
+              <img class="product-card-image" src="img/round-cake.png" alt="Round cake edible image" />
+              <img class="product-card-image" src="img/smallround.png" alt="Round cake edible image variant 1" />
+              <img class="product-card-image" src="img/round.png" alt="Round cake edible image variant 1" />
+              <img class="product-card-image" src="img/2tier.png" alt="Round cake edible image variant 2" />
+            </div>
+            <h3>Round Cakes</h3>
+            <p>Perfect circular edible image toppers for round cakes and celebration desserts.</p>
+            <button class="button button-secondary add-cart" type="button" data-product-id="round-cake" data-product-name="Round Cakes">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-gallery" data-product-gallery>
+              <img class="product-card-image" src="img/1cupcake.png" alt="Cookie edible image" />
+              <img class="product-card-image" src="img/cupcakes.png" alt="Cookie edible image variant 1" />
+              <img class="product-card-image" src="img/cupcake.png" alt="Cookie edible image variant 2" />
+            </div>
+            <h3>Cookie Decals</h3>
+            <p>Small, crisp edible images sized perfectly for cookies and mini desserts.</p>
+            <button class="button button-secondary add-cart" type="button" data-product-id="cookie" data-product-name="Cookie Decals">Add to cart</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image-gallery" data-product-gallery>
+              <img class="product-card-image" src="img/shape1.png" alt="Custom shape edible image" />
+              <img class="product-card-image" src="img/shape.png" alt="Custom shape edible image variant 1" />
+              <img class="product-card-image" src="img/custom-shape.png" alt="Custom shape edible image variant 2" />
+            </div>
+            <h3>Custom Shapes</h3>
+            <p>Personalized shapes, logos, icons, and themed designs cut to order.</p>
+            <button class="button button-secondary add-cart" type="button" data-product-id="custom-shape" data-product-name="Custom Shapes">Add to cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-process">
+      <div class="container process-grid">
+        <div class="process-copy">
+          <p class="eyebrow">How it works</p>
+          <h2>Simple ordering in 3 easy steps.</h2>
+          <p>Pick your product, upload your image, and we’ll print a professional edible design ready for your dessert.</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Choose your format</h3>
+            <p>Select sheet size, circle topper, or custom shape for your dessert.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Upload your image</h3>
+            <p>Send us your design or photo. We handle resizing and print quality.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Receive bakery-ready art</h3>
+            <p>Quick production and safe packaging delivered to your door or pickup location.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-testimonials">
+      <div class="container">
+        <div class="testimonial-card">
+          <p>"The edible image made our party cake look amazing. The quality was excellent and delivery was on time."</p>
+          <div class="testimonial-author">
+            <strong>Helene MK.</strong>
+            <span>Happy customer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Ready to order?</p>
+          <h2>Get your edible image order started today.</h2>
+          <p>Need help choosing the right size or material? Send us a message and we’ll assist you with every detail.</p>
+        </div>
+
+        <form id="order-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us which edible image you need." required></textarea>
+          </label>
+          <button type="submit" class="button button-primary">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Edible Image Shop. Premium edible prints delivered with care.</p>
+    </div>
+  </footer>
+
+  <div class="product-modal" id="product-modal" aria-hidden="true">
+    <div class="product-modal-backdrop" data-close-product-modal></div>
+    <div class="product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+      <button class="product-modal-close" type="button" aria-label="Close preview" data-close-product-modal>×</button>
+      <div class="product-modal-content">
+        <div class="product-modal-visual">
+          <img class="product-modal-image" id="product-modal-image" src="" alt="" />
+          <div class="product-modal-thumbs" id="product-modal-thumbs"></div>
+        </div>
+        <div class="product-modal-body">
+          <p class="eyebrow">Product preview</p>
+          <h3 id="product-modal-title"></h3>
+          <p id="product-modal-description"></p>
+          <button class="button button-primary" id="product-modal-add" type="button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

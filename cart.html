@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart — Edible Image Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">E</span>
+        <div>
+          <strong>Edible Image</strong>
+          <small>Sweet Prints</small>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-secondary cart-button" href="cart.html">
+          Cart <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a class="button button-primary" href="index.html#contact">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Your cart</p>
+          <h2>Review the items you selected</h2>
+          <p>Update quantities, remove items, or continue shopping before placing your request.</p>
+        </div>
+
+        <div id="cart-content"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Edible Image Shop. Premium edible prints delivered with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

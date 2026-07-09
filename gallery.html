@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Edible Image Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">E</span>
+        <div>
+          <strong>Edible Image</strong>
+          <small>Sweet Prints</small>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="button button-primary" href="index.html#contact">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>Edible image examples</h2>
+          <p>Browse our sample sheet cake, round cake, cupcake, cookie, and custom shape edible image deliveries.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <div class="gallery-image-gallery" data-product-gallery>
+              <img class="gallery-img" src="img/sheet-cake1.png" alt="Sheet cake edible image" />
+              <img class="gallery-img" src="img/sheet-cake.png" alt="Sheet cake edible image variant 1" />
+              <img class="gallery-img" src="img/sheet-cake1.png" alt="Sheet cake edible image variant 2" />
+            </div>
+            <figcaption>Sheet Cake</figcaption>
+            <button class="button button-secondary add-cart" type="button" data-product-id="sheet-cake" data-product-name="Sheet Cake">Add to cart</button>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="gallery-image-gallery" data-product-gallery>
+              <img class="gallery-img" src="img/round-cake.png" alt="Round cake edible image" />
+              <img class="gallery-img" src="img/round-cake.png" alt="Round cake edible image variant 1" />
+              <img class="gallery-img" src="img/round-cake.png" alt="Round cake edible image variant 2" />
+            </div>
+            <figcaption>Round Cake</figcaption>
+            <button class="button button-secondary add-cart" type="button" data-product-id="round-cake" data-product-name="Round Cake">Add to cart</button>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="gallery-image-gallery" data-product-gallery>
+              <img class="gallery-img" src="img/cupcake.png" alt="Cupcake edible image" />
+              <img class="gallery-img" src="img/cupcake.png" alt="Cupcake edible image variant 1" />
+              <img class="gallery-img" src="img/cupcake.png" alt="Cupcake edible image variant 2" />
+            </div>
+            <figcaption>Cupcake</figcaption>
+            <button class="button button-secondary add-cart" type="button" data-product-id="cupcake" data-product-name="Cupcake">Add to cart</button>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="gallery-image-gallery" data-product-gallery>
+              <img class="gallery-img" src="img/cookie1.png" alt="Cookie edible image" />
+              <img class="gallery-img" src="img/cookie.png" alt="Cookie edible image variant 1" />
+              <img class="gallery-img" src="img/cookie1.png" alt="Cookie edible image variant 2" />
+            </div>
+            <figcaption>Cookie</figcaption>
+            <button class="button button-secondary add-cart" type="button" data-product-id="cookie" data-product-name="Cookie">Add to cart</button>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="gallery-image-gallery" data-product-gallery>
+              <img class="gallery-img" src="img/custom-shape.png" alt="Custom shape edible image" />
+              <img class="gallery-img" src="img/custom-shape.png" alt="Custom shape edible image variant 1" />
+              <img class="gallery-img" src="img/custom-shape.png" alt="Custom shape edible image variant 2" />
+            </div>
+            <figcaption>Custom Shape</figcaption>
+            <button class="button button-secondary add-cart" type="button" data-product-id="custom-shape" data-product-name="Custom Shape">Add to cart</button>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Edible Image Shop. Premium edible prints delivered with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
