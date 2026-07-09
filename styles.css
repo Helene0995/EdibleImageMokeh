@@ -556,12 +556,22 @@ img {
 @media (max-width: 900px) {
   .hero-grid,
   .process-grid,
-  .contact-grid {
+  .contact-grid,
+  .product-grid {
     grid-template-columns: 1fr;
   }
 
   .site-nav {
     display: none;
+  }
+
+  .hero-card,
+  .product-card,
+  .step-card,
+  .testimonial-card,
+  .cart-request-panel,
+  .product-modal-dialog {
+    width: 100%;
   }
 }
 
@@ -575,17 +585,34 @@ img {
     padding-top: 2.5rem;
   }
 
-  .product-slider {
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .product-grid {
     grid-template-columns: 1fr;
   }
 
-  .slider-button {
-    width: 2.6rem;
-    height: 2.6rem;
+  .product-image-gallery {
+    height: auto;
+    padding: 0.75rem;
   }
 
-  .hero-actions {
+  .product-image-gallery .product-card-image,
+  .product-card-image {
+    position: static;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+
+  .header-actions {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-hidden-mobile {
+    display: none;
   }
 }
 
