@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edible Image Shop</title>
+  <title>Edible Image By Mokeh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="#hero" class="brand">
-        <span class="brand-mark">E</span>
-        <div>
+        <span class="brand-mark" aria-hidden="true">
+          <img src="img/logo.png" alt="Edible Image By Mokeh logo" class="brand-logo" />
+        </span>
+        <div class="brand-text">
           <strong>Edible Image By Mokeh</strong>
-          <small>Sweet Prints</small>
+          <small>Custom sweet prints</small>
         </div>
       </a>
       <nav class="site-nav">
@@ -41,6 +43,11 @@
           <p class="eyebrow">Fast delivery • Custom designs • Premium taste</p>
           <h1>Delicious edible images for cakes, cookies, and desserts.</h1>
           <p class="hero-text">Create unforgettable celebrations with custom edible prints made from quality ingredients. Upload your favorite image, choose the size, and get bakery-ready artwork.</p>
+          <div class="hero-stats">
+            <span>✓ Custom sizing</span>
+            <span>✓ Fast response</span>
+            <span>✓ Bakery-ready finish</span>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">Start Your Order</a>
             <a class="button button-secondary" href="#products">See Designs</a>
@@ -48,10 +55,35 @@
         </div>
         <div class="hero-card">
           <div class="product-badge">Best seller</div>
-          <img src="img/Welcomeimg.png" alt="Edible image cake" />
+          <div class="hero-media-stack">
+            <img class="hero-main-image" src="img/Welcomeimg.png" alt="Custom edible cake topper" />
+          </div>
           <div class="card-info">
             <h2>Custom cake toppers</h2>
             <p>High-definition edible prints that transform any celebration cake into a statement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-trust">
+      <div class="container">
+        <div class="trust-bar">
+          <div class="trust-item">
+            <strong>Fast support</strong>
+            <span>Quick replies for custom orders and sizing questions</span>
+          </div>
+          <div class="trust-item">
+            <strong>Premium edible sheets</strong>
+            <span>Bright, clean prints designed for cakes, cookies, and desserts</span>
+          </div>
+          <div class="trust-item">
+            <strong>Easy image upload</strong>
+            <span>Send your design and we’ll guide you through the rest</span>
+          </div>
+          <div class="trust-item">
+            <strong>Made for celebrations</strong>
+            <span>Birthdays, weddings, corporate events, and more</span>
           </div>
         </div>
       </div>
@@ -68,43 +100,63 @@
         <div class="product-grid">
           <article class="product-card">
             <div class="product-image-gallery" data-product-gallery>
-              <img class="product-card-image" src="img/sheet2.png" alt="Sheet cake edible image" />
+              <img class="product-card-image" src="img/sheetcakereal.PNG" alt="Sheet cake edible image" />
               <img class="product-card-image" src="img/sheet.png" alt="Sheet cake edible image variant 1" />
               <img class="product-card-image" src="img/sheet-cake.png" alt="Sheet cake edible image variant 2" />
             </div>
             <h3>Cake Sheets</h3>
             <p>8x8, 8x10, and full-sheet edible paper for fast application on cakes.</p>
+            <ul class="product-highlights">
+              <li>Ideal for sheet cakes and large designs</li>
+              <li>Sizes available from small to full sheet</li>
+              <li>Clean finish for bakery-style presentation</li>
+            </ul>
             <button class="button button-secondary add-cart" type="button" data-product-id="sheet-cake" data-product-name="Cake Sheets">Add to cart</button>
           </article>
           <article class="product-card">
             <div class="product-image-gallery" data-product-gallery>
-              <img class="product-card-image" src="img/round-cake.png" alt="Round cake edible image" />
+              <img class="product-card-image" src="img/roundcake.PNG" alt="Round cake edible image" />
               <img class="product-card-image" src="img/smallround.png" alt="Round cake edible image variant 1" />
               <img class="product-card-image" src="img/round.png" alt="Round cake edible image variant 1" />
               <img class="product-card-image" src="img/2tier.png" alt="Round cake edible image variant 2" />
             </div>
             <h3>Round Cakes</h3>
             <p>Perfect circular edible image toppers for round cakes and celebration desserts.</p>
+            <ul class="product-highlights">
+              <li>Great for round cakes and tiered designs</li>
+              <li>Sharp edges and vibrant color detail</li>
+              <li>Easy to place on buttercream or fondant</li>
+            </ul>
             <button class="button button-secondary add-cart" type="button" data-product-id="round-cake" data-product-name="Round Cakes">Add to cart</button>
           </article>
           <article class="product-card">
             <div class="product-image-gallery" data-product-gallery>
-              <img class="product-card-image" src="img/1cupcake.png" alt="Cookie edible image" />
+              <img class="product-card-image" src="img/roundcakereal.PNG" alt="Cookie edible image" />
               <img class="product-card-image" src="img/cupcakes.png" alt="Cookie edible image variant 1" />
               <img class="product-card-image" src="img/cupcake.png" alt="Cookie edible image variant 2" />
             </div>
-            <h3>Cookie Decals</h3>
+            <h3>Burn image</h3>
             <p>Small, crisp edible images sized perfectly for cookies and mini desserts.</p>
+            <ul class="product-highlights">
+              <li>Perfect for cookies, cupcakes, and favors</li>
+              <li>Precise detail for logos and photos</li>
+              <li>Lightweight and easy to apply</li>
+            </ul>
             <button class="button button-secondary add-cart" type="button" data-product-id="cookie" data-product-name="Cookie Decals">Add to cart</button>
           </article>
           <article class="product-card">
             <div class="product-image-gallery" data-product-gallery>
-              <img class="product-card-image" src="img/shape1.png" alt="Custom shape edible image" />
+              <img class="product-card-image" src="img/image.png" alt="Custom shape edible image" />
               <img class="product-card-image" src="img/shape.png" alt="Custom shape edible image variant 1" />
               <img class="product-card-image" src="img/custom-shape.png" alt="Custom shape edible image variant 2" />
             </div>
             <h3>Custom Shapes</h3>
             <p>Personalized shapes, logos, icons, and themed designs cut to order.</p>
+            <ul class="product-highlights">
+              <li>Custom cut-outs for branding or themes</li>
+              <li>Great for logos, monograms, and event designs</li>
+              <li>Made to match your dessert shape perfectly</li>
+            </ul>
             <button class="button button-secondary add-cart" type="button" data-product-id="custom-shape" data-product-name="Custom Shapes">Add to cart</button>
           </article>
         </div>
@@ -117,6 +169,10 @@
           <p class="eyebrow">How it works</p>
           <h2>Simple ordering in 3 easy steps.</h2>
           <p>Pick your product, upload your image, and we’ll print a professional edible design ready for your dessert.</p>
+          <div class="process-highlight">
+            <strong>From upload to delivery</strong>
+            <span>We guide you from image selection to final bakery-ready print.</span>
+          </div>
         </div>
 
         <div class="process-steps">
@@ -139,14 +195,138 @@
       </div>
     </section>
 
+    <section class="section section-why-us">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why customers choose us</p>
+          <h2>Simple ordering, premium quality, and dependable support.</h2>
+          <p>Edible Image By Mokeh combines elegant design, custom printing, and friendly service to make every celebration feel extra special.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3>High-definition prints</h3>
+            <p>Vibrant colors and crisp details make every edible image feel bakery-worthy.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Easy custom ordering</h3>
+            <p>Upload your artwork, share your size, and we’ll guide you through each step.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Perfect for every occasion</h3>
+            <p>From birthdays to weddings and corporate events, our images fit any celebration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pricing">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Simple pricing</p>
+          <h2>Choose the option that fits your celebration.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-label">Starter</p>
+            <h3>$24</h3>
+            <p class="pricing-description">Perfect for a small cake, cookies, or a simple custom design.</p>
+            <ul class="pricing-features">
+              <li>Single custom edible image</li>
+              <li>Basic size guidance</li>
+              <li>Email support</li>
+            </ul>
+            <a class="button button-secondary" href="#contact">Request starter order</a>
+          </article>
+          <article class="pricing-card pricing-card-featured">
+            <p class="pricing-label">Most popular</p>
+            <h3>$49</h3>
+            <p class="pricing-description">A strong choice for birthdays, family events, or premium cake styling.</p>
+            <ul class="pricing-features">
+              <li>High-resolution print</li>
+              <li>Custom sizing help</li>
+              <li>Priority response</li>
+            </ul>
+            <a class="button button-primary" href="#contact">Order now</a>
+          </article>
+          <article class="pricing-card">
+            <p class="pricing-label">Bulk / event</p>
+            <h3>Custom</h3>
+            <p class="pricing-description">Best for weddings, offices, party planners, and larger custom orders.</p>
+            <ul class="pricing-features">
+              <li>Multiple designs available</li>
+              <li>Volume order support</li>
+              <li>Tailored delivery plan</li>
+            </ul>
+            <a class="button button-secondary" href="#contact">Ask about bulk pricing</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-testimonials">
       <div class="container">
-        <div class="testimonial-card">
-          <p>"The edible image made our party cake look amazing. The quality was excellent and delivery was on time."</p>
-          <div class="testimonial-author">
-            <strong>Helene MK.</strong>
-            <span>Happy customer</span>
-          </div>
+        <div class="section-heading">
+          <p class="eyebrow">Loved by customers</p>
+          <h2>Trusted for beautiful edible prints and smooth ordering.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-author">
+              <div class="avatar">HM</div>
+              <div>
+                <strong>Helene M.</strong>
+                <span>Birthday cake client</span>
+              </div>
+            </div>
+            <p>"The edible image made our party cake look amazing. The quality was excellent and delivery was on time."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-author">
+              <div class="avatar">AL</div>
+              <div>
+                <strong>Alicia L.</strong>
+                <span>Wedding event order</span>
+              </div>
+            </div>
+            <p>"The colors were bright and the print looked stunning on our cake. Ordering was very simple."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-author">
+              <div class="avatar">SK</div>
+              <div>
+                <strong>Sarah K.</strong>
+                <span>Corporate celebration</span>
+              </div>
+            </div>
+            <p>"Perfect for our company dessert table. The design looked crisp and professional from the first try."</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-faq">
+      <div class="container faq-grid">
+        <div>
+          <p class="eyebrow">Helpful info</p>
+          <h2>Everything you need before placing your order.</h2>
+          <p>From image tips to sizing, we make it easy to order edible images with confidence.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>What image format should I send?</summary>
+            <p>PNG, JPG, or high-resolution files work best. We recommend 300 DPI for the sharpest edible print.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I choose the right size?</summary>
+            <p>Share your cake size and design intent and we’ll help you select the best fit for your dessert.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I order for a wedding or corporate event?</summary>
+            <p>Yes. We regularly create edible images for birthdays, weddings, corporate events, and themed celebrations.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -157,6 +337,11 @@
           <p class="eyebrow">Ready to order?</p>
           <h2>Get your edible image order started today.</h2>
           <p>Need help choosing the right size or material? Send us a message and we’ll assist you with every detail.</p>
+          <ul class="contact-highlights">
+            <li>Fast response for custom requests</li>
+            <li>Image guidance for crisp, bakery-ready prints</li>
+            <li>Support for birthdays, weddings, and business events</li>
+          </ul>
         </div>
 
         <form id="order-form" class="contact-form">
@@ -180,7 +365,24 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Edible Image Shop. Premium edible prints delivered with care.</p>
+      <div class="footer-brand-block">
+        <span class="brand-mark brand-mark-footer" aria-hidden="true">
+          <img src="img/logo.png" alt="Edible Image By Mokeh logo" class="brand-logo" />
+        </span>
+        <div>
+          <strong>Edible Image By Mokeh</strong>
+          <p>Custom edible prints designed to make every celebration feel memorable.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#process">How it works</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:hello@edibleimagebymokeh.com">hello@edibleimagebymokeh.com</a>
+        <span>Fast response • Custom sizing • Bakery-ready finish</span>
+      </div>
     </div>
   </footer>
 
